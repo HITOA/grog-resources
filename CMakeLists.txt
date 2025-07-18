@@ -6,4 +6,6 @@ file(GLOB grog_nodes "Nodes/*/*.*")
 file(ARCHIVE_CREATE
     OUTPUT "pack.zip"
     PATHS ${grog_nodes}
-    FORMAT "zip")
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    FORMAT "zip"
+    VERBOSE)
