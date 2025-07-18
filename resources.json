@@ -4,5 +4,5 @@
         "minor": 0,
         "patch": 0
     },
-    "pack": "https://github.com/HITOA/grog-resources/releases/download/Dev/pack.zip"
+    "pack": "https://raw.githubusercontent.com/HITOA/grog-resources/refs/heads/main/pack.zip"
 }
