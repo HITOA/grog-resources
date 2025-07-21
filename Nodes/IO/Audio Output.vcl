@@ -1,0 +1,3 @@
+/**
+*   VCL Audio output node
+*/
