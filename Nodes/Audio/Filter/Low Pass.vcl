@@ -1,3 +1,0 @@
-/**
-*   VCL Low pass node
-*/

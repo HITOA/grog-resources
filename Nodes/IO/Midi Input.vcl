@@ -1,3 +1,0 @@
-/**
-*   VCL Midi input node
-*/

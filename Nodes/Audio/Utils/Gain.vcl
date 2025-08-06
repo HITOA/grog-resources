@@ -4,6 +4,8 @@
 
 @import "Grog/Core.vcl";
 
+@grog_define NODE_NAME = "Gain";
+
 
 in AudioBuffer<GROG_AUDIO_CHANNEL_COUNT> input;
 in vfloat gain;

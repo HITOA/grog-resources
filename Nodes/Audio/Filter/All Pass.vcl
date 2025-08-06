@@ -1,3 +1,0 @@
-/**
-*   VCL All pass node
-*/

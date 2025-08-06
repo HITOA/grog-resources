@@ -4,6 +4,9 @@
 
 @import "Grog/Core.vcl";
 
+@grog_define NODE_NAME = "Audio Output";
+@grog_define NODE_AS_GRAPH_OUTPUT;
+
 
 in AudioBuffer<GROG_AUDIO_CHANNEL_COUNT> input;
 
