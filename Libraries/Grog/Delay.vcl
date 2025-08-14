@@ -2,8 +2,6 @@
 *   Grog Delay VCL Library
 */
 
-@import "Grog/Core.vcl";
-
 
 struct Delay<typename T, int MaxLength> {
     array<T, MaxLength> buffer;
