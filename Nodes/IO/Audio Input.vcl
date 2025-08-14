@@ -8,7 +8,8 @@
 @grog_define NODE_AS_GRAPH_INPUT;
 
 
-out AudioBuffer<GROG_AUDIO_CHANNEL_COUNT> output;
+[Name="Audio Output"]
+out Audio<GROG_AUDIO_CHANNEL_COUNT> output;
 
 [NodeProcess]
 void Process() {

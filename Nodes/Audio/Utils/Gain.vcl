@@ -1,5 +1,5 @@
 /**
-*   VCL Gain Simple gain node
+*   VCL Gain node
 */
 
 @import "Grog/Core.vcl";
@@ -7,10 +7,13 @@
 @grog_define NODE_NAME = "Gain";
 
 
-in AudioBuffer<GROG_AUDIO_CHANNEL_COUNT> input;
+[Name="Audio Input"]
+in Audio<GROG_AUDIO_CHANNEL_COUNT> input;
+[Name="Gain Level", ToolTip="Linear gain factor"]
 in vfloat gain;
 
-out AudioBuffer<GROG_AUDIO_CHANNEL_COUNT> output;
+[Name="Audio Output"]
+out Audio<GROG_AUDIO_CHANNEL_COUNT> output;
 
 [NodeProcess]
 void Process() {
