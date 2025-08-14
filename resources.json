@@ -1,8 +1,8 @@
 {
     "version": {
         "major": 0,
-        "minor": 0,
-        "patch": 12
+        "minor": 1,
+        "patch": 0
     },
     "pack": "https://raw.githubusercontent.com/HITOA/grog-resources/refs/heads/main/pack.zip"
 }
