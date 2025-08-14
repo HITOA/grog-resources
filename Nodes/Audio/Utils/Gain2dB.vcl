@@ -13,5 +13,5 @@ out vfloat output;
 
 [NodeProcess]
 void Process() {
-    output = select(gain > 100.0, log10(gain) * 20.0, minusInfinitydB);
+    output = select(gain > 0.0, log10(gain) * 20.0, -100.0);
 }

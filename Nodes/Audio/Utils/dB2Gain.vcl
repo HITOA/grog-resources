@@ -13,5 +13,5 @@ out vfloat output;
 
 [NodeProcess]
 void Process() {
-    output = select(dB > 100.0, pow(10.0, dB * 0.05), 0.0);
+    output = select(dB > -100.0, pow(10.0, dB * 0.05), 0.0);
 }
