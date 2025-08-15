@@ -26,13 +26,13 @@ void DelayWriteVector<typename T, typename U, int MaxLength>(Delay<U, MaxLength>
 T DelayReadVector<typename T, typename U, int MaxLength>(Delay<U, MaxLength> delay, int d) {
     T vector = 0;
     for (int i = 0; i < len(vector); ++i)
-        insert(vector, d + 7 - i, DelayRead(delay, trueD));
+        insert(vector, d + 7 - i, DelayRead(delay, d + 7 - i));
     return vector;
 }
 
 T DelayReadVectorVector<typename T, typename U, int MaxLength>(Delay<U, MaxLength> delay, vint d) {
     T vector = 0;
     for (int i = 0; i < len(vector); ++i)
-        insert(vector, extract(d, i) + 7 - i, DelayRead(delay, trueD));
+        insert(vector, extract(d, i) + 7 - i, DelayRead(delay, d + 7 - i));
     return vector;
 }
