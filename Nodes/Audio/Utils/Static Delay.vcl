@@ -7,7 +7,7 @@
 
 @grog_define NODE_NAME = "Delay";
 
-@grog_define_option DELAY "Delay" = 0;
+@grog_define_option DELAY "Delay" = 1;
 
 
 [Name="Audio Input"]
@@ -22,6 +22,6 @@ array<Delay<float, DELAY>, GROG_AUDIO_CHANNEL_COUNT> delays;
 void Process() {
     for (int i = 0; i < GROG_AUDIO_CHANNEL_COUNT; ++i) {
         DelayWriteVector(delays[i], input.channels[i]);
-        output.channels[i] = DelayReadVector(delays[i], DELAY);
+        output.channels[i] = DelayReadVector<vfloat>(delays[i], DELAY);
     }
 }

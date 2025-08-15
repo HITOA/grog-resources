@@ -24,6 +24,6 @@ array<Delay<float, DELAY_MAX_LENGTH>, GROG_AUDIO_CHANNEL_COUNT> delays;
 void Process() {
     for (int i = 0; i < GROG_AUDIO_CHANNEL_COUNT; ++i) {
         DelayWriteVector(delays[i], input.channels[i]);
-        output.channels[i] = DelayReadVectorVector(delays[i], delay);
+        output.channels[i] = DelayReadVectorVector<vfloat>(delays[i], delay);
     }
 }
