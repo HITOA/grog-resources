@@ -33,6 +33,6 @@ T DelayReadVector<typename T, typename U, int MaxLength>(Delay<U, MaxLength> del
 T DelayReadVectorVector<typename T, typename U, int MaxLength>(Delay<U, MaxLength> delay, vint d) {
     T vector = 0;
     for (int i = 0; i < len(vector); ++i)
-        insert(vector, extract(d, i) + 7 - i, DelayRead(delay, d + 7 - i));
+        insert(vector, extract(d, i) + 7 - i, DelayRead(delay, extract(d, i) + 7 - i));
     return vector;
 }
